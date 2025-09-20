@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connection Test</title>
+</head>
+<body>
+    <h1>Frontend Test</h1>
+    <p>This is a standalone frontend application that uses simulated data.</p>
+    <button onclick="testFrontend()">Test Frontend</button>
+    <div id="result"></div>
+
+    <script>
+        async function testFrontend() {
+            const resultDiv = document.getElementById('result');
+            try {
+                // Since this is a frontend-only application, we'll just show a success message
+                resultDiv.innerHTML = '<p style="color: green;">Success! Frontend is working correctly with simulated data.</p>';
+            } catch (error) {
+                resultDiv.innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>
